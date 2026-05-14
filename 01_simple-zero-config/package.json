@@ -1,0 +1,19 @@
+{
+  "name": "simple-zero-config",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "main": "bw run main",
+    "hello": "bw run hello",
+    "run-a": "bw --log-level=warn run --output-style=plain --workspace-patterns=workspace-a --script=",
+    "run-b": "bw --log-level=warn run --output-style=plain --workspace-patterns=workspace-b --script=",
+    "run-c": "bw --log-level=warn run --output-style=plain --workspace-patterns=workspace-c --script="
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-workspaces": "^1.10.0",
+    "typescript": "^6.0.3"
+  }
+}

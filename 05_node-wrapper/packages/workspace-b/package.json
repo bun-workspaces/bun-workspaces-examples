@@ -1,0 +1,13 @@
+{
+  "name": "workspace-b",
+  "private": true,
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "hello": "echo 'Hello from workspace-b'",
+    "main": "node src/main.js"
+  },
+  "dependencies": {
+    "workspace-a": "workspace:*"
+  }
+}

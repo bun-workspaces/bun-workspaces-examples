@@ -1,0 +1,9 @@
+{
+  "name": "workspace-a",
+  "private": true,
+  "main": "src/main.ts",
+  "scripts": {
+    "hello": "echo 'Hello from workspace-a'",
+    "main": "bun src/main.ts"
+  }
+}

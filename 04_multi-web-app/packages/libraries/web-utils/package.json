@@ -1,0 +1,17 @@
+{
+  "name": "web-utils",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "common-utils": "workspace:*",
+    "react": "catalog:web",
+    "react-dom": "catalog:web"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:web",
+    "@types/react-dom": "catalog:web"
+  }
+}

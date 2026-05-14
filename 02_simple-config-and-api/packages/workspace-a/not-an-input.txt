@@ -1,0 +1,3 @@
+
+This file is not an input file thanks to the workspace's `"defaultInputs"`
+only including src/ files, set by `bw.root.ts`'s `workspacePatternConfigs`.

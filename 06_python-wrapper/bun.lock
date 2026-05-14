@@ -1,0 +1,30 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "python-wrapper",
+      "devDependencies": {
+        "bun-workspaces": "^1.10.0",
+      },
+    },
+    "packages/analyzer": {
+      "name": "analyzer",
+    },
+    "packages/loader": {
+      "name": "loader",
+    },
+    "packages/reporter": {
+      "name": "reporter",
+    },
+  },
+  "packages": {
+    "analyzer": ["analyzer@workspace:packages/analyzer"],
+
+    "bun-workspaces": ["bun-workspaces@1.10.0", "", { "bin": { "bun-workspaces": "bin/cli.js", "bw": "bin/cli.js" } }, "sha512-epf/iAx9I2S0jkA0yKPfFvYZMdiKS5Py+IhF9IzBGer2cRcdygFwhribTxCCgdiNy7ETJ+WTvfkMY/jTtLZwVA=="],
+
+    "loader": ["loader@workspace:packages/loader"],
+
+    "reporter": ["reporter@workspace:packages/reporter"],
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "multi-web-app",
+  "private": true,
+  "type": "module",
+  "workspaces": {
+    "packages": [
+      "packages/applications/*/*",
+      "packages/libraries/*"
+    ],
+    "catalogs": {
+      "web": {
+        "@types/react": "^19.0.0",
+        "@types/react-dom": "^19.0.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+      }
+    }
+  },
+  "scripts": {
+    "affected-debug": "bw ls-affected --explain --detailed",
+    "build": "bw run build",
+    "build:affected": "bw run-affected build",
+    "build:app-a": "bw run build tag:app-a",
+    "build:app-a:web": "bw run build a-web",
+    "build:app-a:api": "bw run build a-api",
+    "build:app-b": "bw run build tag:app-b",
+    "build:app-b:web": "bw run build b-web",
+    "build:app-b:api": "bw run build b-api",
+    "dev": "bw run dev",
+    "dev:app-a": "bw run dev tag:app-a",
+    "dev:app-a:web": "bw run -o plain dev a-web",
+    "dev:app-a:api": "bw run -o plain dev a-api",
+    "dev:app-b": "bw run dev tag:app-b",
+    "dev:app-b:web": "bw run -o plain dev b-web",
+    "dev:app-b:api": "bw run -o plain dev b-api",
+    "lint": "bw run lint",
+    "lint:affected": "bw run-affected lint"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/bun": "latest",
+    "bun-workspaces": "^1.10.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^16.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.0.0"
+  }
+}

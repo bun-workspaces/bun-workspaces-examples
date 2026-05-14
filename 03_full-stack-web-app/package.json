@@ -1,0 +1,34 @@
+{
+  "name": "full-stack-web-app",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "affected-debug": "bw ls-affected --explain --detailed",
+    "build": "bw run build",
+    "build:affected": "bw run-affected build",
+    "build:rest-api": "bw run -o plain build rest-api",
+    "build:web": "bw run -o plain build web",
+    "dev": "bw run dev",
+    "dev:rest-api": "bw run -o plain dev rest-api",
+    "dev:web": "bw run -o plain dev web",
+    "lint": "bw run lint",
+    "lint:affected": "bw run-affected lint",
+    "lint:rest-api": "bw run -o plain lint rest-api",
+    "lint:shared": "bw run -o plain lint shared",
+    "lint:web": "bw run -o plain lint web"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/bun": "latest",
+    "bun-workspaces": "^1.10.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^16.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.0.0"
+  }
+}

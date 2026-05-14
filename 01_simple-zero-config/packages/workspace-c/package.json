@@ -1,0 +1,11 @@
+{
+  "name": "workspace-c",
+  "private": true,
+  "scripts": {
+    "hello": "echo 'Hello from workspace-c'",
+    "main": "bun src/main.ts"
+  },
+  "dependencies": {
+    "workspace-b": "workspace:*"
+  }
+}

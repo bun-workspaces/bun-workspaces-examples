@@ -1,0 +1,20 @@
+{
+  "name": "python-wrapper",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "main": "bw run main",
+    "main:loader": "bw run -o plain main loader",
+    "main:analyzer": "bw run -o plain main analyzer",
+    "main:reporter": "bw run -o plain main reporter",
+    "check": "bw run check",
+    "check:loader": "bw run -o plain check loader",
+    "check:analyzer": "bw run -o plain check analyzer",
+    "check:reporter": "bw run -o plain check reporter"
+  },
+  "devDependencies": {
+    "bun-workspaces": "^1.10.0"
+  }
+}

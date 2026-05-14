@@ -1,0 +1,14 @@
+{
+  "name": "@app-a/rest-api",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "build": "bun build src/index.ts --outdir=./dist --target=bun",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@app-a/shared": "workspace:*",
+    "backend-utils": "workspace:*"
+  }
+}
