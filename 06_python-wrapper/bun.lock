@@ -5,7 +5,7 @@
     "": {
       "name": "python-wrapper",
       "devDependencies": {
-        "bun-workspaces": "^1.10.0",
+        "bun-workspaces": "^1.11.0",
       },
     },
     "packages/analyzer": {
@@ -21,7 +21,7 @@
   "packages": {
     "analyzer": ["analyzer@workspace:packages/analyzer"],
 
-    "bun-workspaces": ["bun-workspaces@1.10.0", "", { "bin": { "bun-workspaces": "bin/cli.js", "bw": "bin/cli.js" } }, "sha512-epf/iAx9I2S0jkA0yKPfFvYZMdiKS5Py+IhF9IzBGer2cRcdygFwhribTxCCgdiNy7ETJ+WTvfkMY/jTtLZwVA=="],
+    "bun-workspaces": ["bun-workspaces@1.11.0", "", { "bin": { "bun-workspaces": "bin/cli.js", "bw": "bin/cli.js" } }, "sha512-pEJTAS0VGrCvECRw//mlCt9KWjDiYKAb9VcJ8snnYxr2Ep5hnEanZP5SAnTc1yearCbxX7shrPw6TW5h20gxlQ=="],
 
     "loader": ["loader@workspace:packages/loader"],
 

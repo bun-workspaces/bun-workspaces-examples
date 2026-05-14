@@ -15,6 +15,6 @@
     "check:reporter": "bw run -o plain check reporter"
   },
   "devDependencies": {
-    "bun-workspaces": "^1.10.0"
+    "bun-workspaces": "^1.11.0"
   }
 }

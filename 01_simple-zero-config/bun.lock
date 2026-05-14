@@ -6,7 +6,7 @@
       "name": "simple-zero-config",
       "devDependencies": {
         "@types/bun": "latest",
-        "bun-workspaces": "^1.10.0",
+        "bun-workspaces": "^1.11.0",
         "typescript": "^6.0.3",
       },
     },
@@ -33,7 +33,7 @@
 
     "bun-types": ["bun-types@1.3.13", "", { "dependencies": { "@types/node": "*" } }, "sha512-QXKeHLlOLqQX9LgYaHJfzdBaV21T63HhFJnvuRCcjZiaUDpbs5ED1MgxbMra71CsryN/1dAoXuJJJwIv/2drVA=="],
 
-    "bun-workspaces": ["bun-workspaces@1.10.0", "", { "bin": { "bun-workspaces": "bin/cli.js", "bw": "bin/cli.js" } }, "sha512-epf/iAx9I2S0jkA0yKPfFvYZMdiKS5Py+IhF9IzBGer2cRcdygFwhribTxCCgdiNy7ETJ+WTvfkMY/jTtLZwVA=="],
+    "bun-workspaces": ["bun-workspaces@1.11.0", "", { "bin": { "bun-workspaces": "bin/cli.js", "bw": "bin/cli.js" } }, "sha512-pEJTAS0VGrCvECRw//mlCt9KWjDiYKAb9VcJ8snnYxr2Ep5hnEanZP5SAnTc1yearCbxX7shrPw6TW5h20gxlQ=="],
 
     "typescript": ["typescript@6.0.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="],
 
